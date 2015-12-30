@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+// Our variables
+$base-font-family: "Montserrat", Helvetica, Arial, sans-serif;
+
+
+
+$brown-dark: #362f2d;
+
+$off-white: #fdfdfd;
+
+$teal-dark: #054745;
+
+$grey: #828282;
+$grey-light: lighten($grey, 40%);
+$grey-dark: darken($grey, 25%);
+
+$chef-orange: #f18b21;
+$chef-blue: #6bb2e2;
+$chef-darkblue: #3f5364;
+
+$text-color: $brown-dark;
+$background-color: $off-white;
+$brand-color: $teal-dark;
+
+// Width of the content area
+$content-width: 800px;
+
+$small-screen: 600px;
+$large-screen: 800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($max-size) {
+  @media screen and (max-width: $max-size) {
+    @content;
+  }
+}
+
+@mixin media-query-min($min-size) {
+  @media screen and (min-width: $min-size) {
+    @content;
+  }
+}
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base",
+  "layout",
+  "syntax-highlighting",
+  "buttons",
+  "footer",
+  "header",
+  "post",
+  "hero",
+  "tiles",
+  "product-page"
+;

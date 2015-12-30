@@ -1,0 +1,51 @@
+// Hero sections
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  h1 {
+    font-size: 46px;
+  }
+
+  p {
+    margin-bottom: 28px;
+    font-size: 18px;
+  }
+
+  // customers page
+  &__customers {
+    background-image: url("/images/customers/hero.png");
+
+    h1 {
+      color: white;
+    }
+  }
+
+  // product pages
+  &__product-page {
+    h1 {
+      font-size: 36px;
+      line-height: 1;
+    }
+
+    h1, p {
+      text-align: center;
+      color: white;
+    }
+  }
+
+  // product page -- delivery
+  &__delivery {
+    background-image: url("/images/delivery/hero.png");
+  }
+}
+
+.hero--content {
+  width: 66%;
+  text-align: center;
+}
