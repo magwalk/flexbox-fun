@@ -16,6 +16,9 @@ twitter_username: magwalk
 github_username:  magwalk
 exclude: [‘css’, ‘_scss’]
 keep_files: ['_site/css']
+sass:
+  sass_dir: _sass
+  style: :compressed
 
 # Build settings
 markdown: kramdown
