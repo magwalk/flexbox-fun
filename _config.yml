@@ -10,8 +10,8 @@ title: Flexbox Fun
 email: mwalker@chef.io
 description: > # this means to ignore newlines until "baseurl:"
   A playground for research in flexbox, the picture element, and responsive web design goodies.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "/flexbox-fun" # the base hostname & protocol for your site
+baseurl: "/flexbox-fun" # the subpath of your site, e.g. /blog
+#url: "/flexbox-fun" # the base hostname & protocol for your site
 twitter_username: magwalk
 github_username:  magwalk
 exclude: [‘css’, ‘_scss’]
