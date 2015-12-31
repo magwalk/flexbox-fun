@@ -43,9 +43,46 @@
   &__delivery {
     background-image: url("/flexbox-fun/images/delivery/hero.png");
   }
+
+  // picture page - examples of hero images
+  &.picture-page {
+    margin-bottom: 30px;
+  }
 }
 
 .hero--content {
   width: 66%;
   text-align: center;
+}
+
+// Responsive hero images - using .hero__customers
+.hero__customers__responsive {
+  @media (min-width: 1000px) {
+    background-image: url("/flexbox-fun/images/customers/hero.png");
+  }
+
+  @media (max-width: 1000px) and (min-width: 600px) {
+    background-image: url("/flexbox-fun/images/customers/hero-medium.png")
+  }
+
+  @media (max-width: 600px) {
+    background-image: url("/flexbox-fun/images/customers/hero-small.png")
+  }
+}
+
+// Responsive picture element - appears similar to hero
+.hero__picture {
+  width: 100%;
+  min-height: 350px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: stretch;
+
+  picture,
+  img,
+  source {
+    width: 100%;
+    min-height: 100%;
+  }
 }
