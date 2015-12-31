@@ -85,6 +85,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+h1.h1__rule {
+  border-bottom: 1px solid lighten($grey, 30%);
+  margin-bottom: 20px;
+}
+
+h2.h2__uc {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $brand-color;
+}
 
 
 /**
@@ -148,6 +158,10 @@ pre {
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+h1 code {
+  font-size: inherit;
 }
 
 /**
