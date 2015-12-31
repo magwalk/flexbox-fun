@@ -17,7 +17,7 @@ github_username:  magwalk
 #exclude: [‘css’, ‘_scss’]
 keep_files: ['_site/css']
 sass:
-  sass_dir: _sass
+  sass_dir: css
   style: :compressed
 
 # Build settings

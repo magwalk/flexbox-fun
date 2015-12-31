@@ -21,7 +21,7 @@ module.exports = function (grunt) {
         // watch for files to change and run tasks when they do
         watch: {
             sass: {
-                files: ['_sass/**/*.{scss,sass}'],
+                files: ['css/**/*.{scss,sass}'],
                 tasks: ['sass']
             },
             autoprefixer: {
@@ -36,13 +36,13 @@ module.exports = function (grunt) {
                 sourceMap: true,
                 relativeAssets: false,
                 outputStyle: 'expanded',
-                sassDir: '_sass',
+                sassDir: 'css',
                 cssDir: '_site/css'
             },
             build: {
                 files: [{
                     expand: true,
-                    cwd: '_sass/',
+                    cwd: 'css/',
                     src: ['**/*.{scss,sass}'],
                     dest: '_site/css',
                     ext: '.css'
