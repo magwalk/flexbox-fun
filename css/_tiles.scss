@@ -1,0 +1,80 @@
+.tiles {
+  margin-top: 60px;
+  height: 2280px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.tile {
+  $columns: 3;
+  $gutter: 2%;
+
+  display: flex;
+  align-items: stretch;
+  color: white;
+  width: (100% - ($gutter * ($columns - 1)))/ $columns;
+  margin-right: $gutter;
+  margin-bottom: $gutter;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.02, 1.02)
+  }
+
+  a {
+    color: white;
+    padding: 20px 20px 40px;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  &__orange {
+    background: $chef-orange;
+  }
+
+  &__blue {
+    background: $chef-blue;
+  }
+
+  &__darkblue {
+    background: $chef-darkblue;
+  }
+}
+
+.tile--logo {
+  max-height: 90px;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.tile--content {
+  margin-bottom: 20px;
+  font-size: 18px;
+
+  &:before {
+    content: "\201C";
+    margin-right: -5px;
+  }
+
+  &:after {
+    content: "\201D";
+    margin-left: -5px;
+  }
+}
+
+.tile--tag {
+  position: relative;
+  display: inline-block;
+  margin-left: -20px;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.tile--icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
+}
