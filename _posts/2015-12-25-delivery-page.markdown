@@ -24,22 +24,22 @@ categories: jekyll update
 <div class="product-page--icons wrapper">
   <div class="wrapper--content grid grid__gutters">
     <div class="product-page--icon grid--cell">
-      <img src="/images/delivery/accelerate.svg">
+      <img src="{{ site.baseurl }}/images/delivery/accelerate.svg">
       <h3>Accelerate</h3>
       <p>Deliver software and infrastructure changes rapidly and safely</p>
     </div>
     <div class="product-page--icon grid--cell">
-      <img src="/images/delivery/visualize.svg">
+      <img src="{{ site.baseurl }}/images/delivery/visualize.svg">
       <h3>Visualize</h3>
       <p>See every change, in every project, quickly and easily, with full traceability of changes</p>
     </div>
     <div class="product-page--icon grid--cell">
-      <img src="/images/delivery/test.svg">
+      <img src="{{ site.baseurl }}/images/delivery/test.svg">
       <h3>Test</h3>
       <p>Automatically test changes with any dependencies. Ensure reliable deployments</p>
     </div>
     <div class="product-page--icon grid--cell">
-      <img src="/images/delivery/innovate.svg">
+      <img src="{{ site.baseurl }}/images/delivery/innovate.svg">
       <h3>Innovate</h3>
       <p>Realize the value of your ideas faster with Chef Delivery</p>
     </div>
@@ -50,7 +50,7 @@ categories: jekyll update
 <div class="product-page--highlight wrapper">
   <div class="wrapper--content grid grid__gutters">
     <div class="product-page--highlight--img grid--cell grid--cell__5">
-      <img src="/images/delivery/ooyala-white.png">
+      <img src="{{ site.baseurl }}/images/delivery/ooyala-white.png">
     </div>
     <div class="product-page--highlight--text grid--cell grid--cell__7">
       <p>
@@ -63,7 +63,7 @@ categories: jekyll update
 <div class="product-page--section wrapper">
   <div class="wrapper--content grid grid__gutters">
     <div class="product-page--section--img grid--cell">
-      <img src="/images/delivery/recipe.png">
+      <img src="{{ site.baseurl }}/images/delivery/recipe.png">
     </div>
     <div class="product-page--section--text grid--cell">
       <h3>Proven Recipe For Success</h3>
@@ -77,7 +77,7 @@ categories: jekyll update
 <div class="product-page--section wrapper">
   <div class="wrapper--content grid grid__gutters">
     <div class="product-page--section--img grid--cell">
-      <img src="/images/delivery/visualize-screenshot.png" class="screenshot">
+      <img src="{{ site.baseurl }}/images/delivery/visualize-screenshot.png" class="screenshot">
     </div>
     <div class="product-page--section--text grid--cell">
       <h3>Visualize Changes</h3>
@@ -91,7 +91,7 @@ categories: jekyll update
 <div class="product-page--section wrapper">
   <div class="wrapper--content grid grid__gutters">
     <div class="product-page--section--img grid--cell">
-      <img src="/images/delivery/pipeline.png">
+      <img src="{{ site.baseurl }}/images/delivery/pipeline.png">
     </div>
     <div class="product-page--section--text grid--cell">
       <h3>One Pipeline for All Changes</h3>
@@ -106,7 +106,7 @@ categories: jekyll update
   <div class="wrapper--content">
     <div class="grid grid__gutters">
       <div class="product-page--section--img grid--cell">
-        <img src="/images/delivery/try-it.png">
+        <img src="{{ site.baseurl }}/images/delivery/try-it.png">
       </div>
       <div class="product-page--section--text grid--cell">
         <h3>Try It Yourself</h3>
