@@ -14,7 +14,7 @@ baseurl: "/flexbox-fun" # the subpath of your site, e.g. /blog
 #url: "/flexbox-fun" # the base hostname & protocol for your site
 twitter_username: magwalk
 github_username:  magwalk
-exclude: [‘css’, ‘_scss’]
+#exclude: [‘css’, ‘_scss’]
 keep_files: ['_site/css']
 sass:
   sass_dir: _sass
