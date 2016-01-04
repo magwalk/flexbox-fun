@@ -13,24 +13,8 @@ $gutterWidth: 2%; //Sets width of each gutter
 .grid {
   display: flex;
 
-  @include media-query(600px) {
+  @include media-query(700px) {
     display: block;
-  }
-}
-
-.grid--cell {
-  flex: 1;
-}
-
-/* Mobile Grid Resets all Columns to 100%*/
-@for $i from 1 through $cols {
-  .grid--cell__#{$i} {
-    flex-basis: 100%;
-    //Sets grid widths at larger screen sizes
-    @include media-query-min(700px) {
-      $gridWidth : ($i * $colWidth) + ($gutterWidth * ($i - 1)) ;
-      flex-basis: $gridWidth;
-    }
   }
 }
 
@@ -43,6 +27,46 @@ $gutterWidth: 2%; //Sets width of each gutter
   }
 }
 
+.grid--cell {
+  flex: 1;
+}
+
+@for $i from 1 through $cols {
+  .grid--cell__#{$i} {
+    flex-basis: 100%;
+    //Sets grid widths at larger screen sizes
+    @include media-query-min(700px) {
+      $gridWidth : ($i * $colWidth) + ($gutterWidth * ($i - 1)) ;
+      flex-basis: $gridWidth;
+    }
+  }
+}
+
+// Grid page example
+.grid__example {
+  margin-bottom: 30px;
+
+  .grid--cell {
+    display: flex;
+    align-items: stretch;
+
+    p {
+      margin-bottom: 0;
+      font-size: 10px;
+      color: white;
+    }
+  }
+
+  .grid--cell--content {
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: $grey;
+  }
+}
 
 // Layout micro-classes
 .text-left {
